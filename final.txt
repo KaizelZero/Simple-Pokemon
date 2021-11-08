@@ -1,0 +1,125 @@
+TITLE -
+Jimmy Truong
+CSCI 261 Section A
+Project Title: Simple Pokemon
+
+PROBLEM DESCRIPTION - 
+This program is simply a Pokémon game based on the hit series Pokémon.
+In this game, you play as Ash Ketchum using his Pokémon team to battle the Elite Four. 
+The program starts by asking the player if they are ready to battle and if they are, will start the battle. 
+The battle consists of the player choosing a Pokémon from Ash’s team and the 
+program prompting them if they would like to switch Pokémon or attack the opponent. 
+After you attack the opponent, the opponent will attack back. 
+The opponent uses random numbers to pick a Pokémon to battle and a random number to choose the move. 
+This repeats until you (Ash) loses or you defeat the Elite Four. 
+The program will then output the team you won with and all the Pokémon you’ve defeated.
+The program end when you press ENTER.
+
+PROGRAM DOCUMENTATION - 
+How to run the program:
+Follow the input prompts. If the program asks for "[A]ttack or [S]witch", input whatever is in the brackets.
+Input the pokemon name correctly when the program asks for it.
+
+The program only breaks if you input "c" the first time the program asks "Are You Ready to Battle?!".
+This is because "c" was implemented to make debugging quicker.
+
+How to use "c":
+The first time the program asks "Are You Ready to Battle?!", inputting c then a number 1 through 5 will
+fast forward you to the leader's number. This will not add to the output file where it displays the
+number of Pokemon defeated.
+
+REFELECTIONS - 
+I learned a lot about C++ while working on this project. I learned that you shouldn't do a Pokemon game because it
+is very difficult. However, I learned more about classes and better implementation of them. What I would do differently
+is to outline the classes and what the classes so before hand. Basically a UML class diagram. I also learned that you 
+should keep better track of what variables are in which class. Most of my time was spent navigating through class files.
+
+
+TESTS - 
+[1]
+OUTPUT - Are You Ready to Battle?! [Y]es or [N]o
+INPUT - asd
+OUTPUT - Are You Ready to Battle?! [Y]es or [N]o
+OUTPUT - Are You Ready to Battle?! [Y]es or [N]o
+OUTPUT - Are You Ready to Battle?! [Y]es or [N]o
+INPUT - y
+OUTPUT - 
+LEADER - Aaron
+Dustox
+Heracross
+Vespiquen
+Beautifly
+Drapion
+
+Aaron has sent out Beautifly.
+Which Pokemon would you like to send out?
+        Pikachu
+        Staraptor
+        Torterra
+        Infernape
+        Buizel
+        Gible
+Enter the name of the Pokemon:
+
+[2]
+OUTPUT - Enter the name of the Pokemon:
+INPUT - pikchu
+OUTPUT - 
+The Pokemon you selected was not found in your roster.
+Please enter the name of one of your Pokemon:
+INPUT - pikachu
+OUTPUT - 
+Pikachu [HP: 180/180] vs. Beautifly [HP: 230/230]
+What would you like to do? [A]ttack or [S]witch Pokemon?
+>
+
+[3]
+OUTPUT - What would you like to do? [A]ttack or [S]witch Pokemon?
+INPUT - n
+OUTPUT - Your selection was invalid. Please try again.
+INPUT - 1
+OUTPUT - Your selection was invalid. Please try again.
+INPUT - a
+
+[4]
+OUTPUT - Pikachu is going to attack enemy Beautifly!
+What move should Pikachu use?
+        1: Thunder Bolt [15/15]
+        2: Iron Tail [15/15]
+        3: Quick Attack [30/30]
+        4: Thunder [10/10]
+Please enter the number of the move you would like to use:
+INPUT - 5
+OUTPUT - That was not a valid move choice.
+Please select a different move:
+INPUT - f
+OUTPUT - That was not a valid move choice.
+Please select a different move:
+INPUT - 4
+OUTPUT - 
+Pikachu attacked enemy Beautifly using Thunder!
+Pikachu did 110 points of damage to enemy Beautifly!
+
+
+
+Pikachu [HP: 180/180] vs. Beautifly [HP: 120/230]
+Enemy Beautifly attacked Pikachu using Silver Wind!
+Enemy Beautifly did 60 points of damage to Pikachu!
+
+
+
+Pikachu [HP: 120/180] vs. Beautifly [HP: 120/230]
+What would you like to do? [A]ttack or [S]witch Pokemon?
+
+[5]
+OUTPUT - What would you like to do? [A]ttack or [S]witch Pokemon?
+INPUT - S
+OUTPUT - 
+Which Pokemon would you like to send out?
+        Pikachu
+        Staraptor
+        Torterra
+        Infernape
+        Buizel
+        Gible
+Enter the name of the Pokemon:
